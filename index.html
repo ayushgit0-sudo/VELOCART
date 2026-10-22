@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VeloCart | Modern Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            Velo<span>Cart</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+        </nav>
+
+        <button class="cart-btn" id="cartBtn">
+            🛒 Cart
+            <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tagline">
+                SMART SHOPPING. BETTER CHOICES.
+            </p>
+
+            <h1>
+                Find what you
+                <span>love.</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover carefully selected products
+                at prices you'll love.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Explore Products
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products-section" id="products">
+
+        <div class="section-header">
+
+            <div>
+                <p class="section-label">
+                    OUR COLLECTION
+                </p>
+
+                <h2>
+                    Featured Products
+                </h2>
+            </div>
+
+
+            <!-- SEARCH -->
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+
+                🔍
+
+            </div>
+
+        </div>
+
+
+        <!-- FILTERS -->
+        <div class="filters" id="categories">
+
+            <button
+                class="filter active"
+                data-category="all">
+                All
+            </button>
+
+            <button
+                class="filter"
+                data-category="electronics">
+                Electronics
+            </button>
+
+            <button
+                class="filter"
+                data-category="fashion">
+                Fashion
+            </button>
+
+            <button
+                class="filter"
+                data-category="accessories">
+                Accessories
+            </button>
+
+        </div>
+
+
+        <!-- SORT -->
+        <div class="sort-area">
+
+            <label for="sortSelect">
+                Sort:
+            </label>
+
+            <select id="sortSelect">
+
+                <option value="default">
+                    Recommended
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+        <div
+            class="product-grid"
+            id="productGrid">
+
+            <!-- JavaScript will create products here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- CART SIDEBAR -->
+    <div
+        class="cart-overlay"
+        id="cartOverlay">
+
+        <div class="cart-panel">
+
+            <div class="cart-header">
+
+                <h2>
+                    Your Cart
+                </h2>
+
+                <button id="closeCart">
+                    ×
+                </button>
+
+            </div>
+
+
+            <div
+                class="cart-items"
+                id="cartItems">
+
+                <p class="empty-cart">
+                    Your cart is empty.
+                </p>
+
+            </div>
+
+
+            <div class="cart-footer">
+
+                <div class="total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="cartTotal">
+                        ₹0
+                    </strong>
+
+                </div>
+
+                <button
+                    class="checkout-btn"
+                    id="checkoutBtn">
+
+                    Checkout
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- NOTIFICATION -->
+    <div
+        class="notification"
+        id="notification">
+
+        Product added to cart.
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
